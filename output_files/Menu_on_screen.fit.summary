@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Dec 28 16:17:57 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : Menu_on_screen
+Top-level Entity Name : vga_TOP
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 1,037 / 22,320 ( 5 % )
+    Total combinational functions : 846 / 22,320 ( 4 % )
+    Dedicated logic registers : 532 / 22,320 ( 2 % )
+Total registers : 532
+Total pins : 8 / 154 ( 5 % )
+Total virtual pins : 0
+Total memory bits : 512 / 608,256 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

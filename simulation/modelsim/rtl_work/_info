@@ -1,0 +1,146 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/simulation/modelsim
+vchars
+Z1 !s110 1577533868
+!i10b 1
+!s100 ;]1Y9SWL<A^Fd6Zd@Y^2k2
+I@X5JOa7mWmGbIYS744@Lh2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1577469293
+8C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Chars V2.v
+FC:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Chars V2.v
+L0 2
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1577533868.000000
+!s107 C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Chars V2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master|C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Chars V2.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master
+Z7 tCvgOpt 0
+vROM
+!s110 1577534804
+!i10b 1
+!s100 =h1@QB7RHmE_7NP7@LGWI3
+IA1PQL9K[@K0>ZKKcZTPOh3
+R2
+R0
+w1577534728
+8C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v
+FC:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1577534804.000000
+!s107 C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master|C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v|
+!i113 1
+R5
+R6
+R7
+n@r@o@m
+vvalue_ROM
+R1
+!i10b 1
+!s100 O9U_QiY=Sme:4HE9=ib3h3
+IkCB@3P[eQX331Q1df_S:<0
+R2
+R0
+Z8 w1577440328
+8C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
+FC:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master|C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v|
+!i113 1
+R5
+R6
+R7
+nvalue_@r@o@m
+vvga
+R1
+!i10b 1
+!s100 Z4kGUCN@1n]F=0j4>1D1:3
+I6<8DG6WESQ1DQZElCM@SQ3
+R2
+R0
+R8
+8C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA.v
+FC:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master|C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA.v|
+!i113 1
+R5
+R6
+R7
+vvga_TOP
+!s110 1577534808
+!i10b 1
+!s100 W_5BO1YVVVibjhE5no1Zf3
+I7gM6eD9O:5ZFCM]XKHO[:1
+R2
+R0
+w1577534787
+8C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v
+FC:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1577534808.000000
+!s107 C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master|C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v|
+!i113 1
+R5
+R6
+R7
+nvga_@t@o@p
+vvga_TOP_vlg_tst
+!s110 1577533869
+!i10b 1
+!s100 V:D7Ve^=KS?YJ@2W[l[H<3
+I]XGmGlg@HZ>[5Ml__n>L[0
+R2
+R0
+R8
+8C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/simulation/modelsim/vga_TOP.vt
+FC:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/simulation/modelsim/vga_TOP.vt
+L0 28
+R3
+r1
+!s85 0
+31
+!s108 1577533869.000000
+!s107 C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/simulation/modelsim/vga_TOP.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/simulation/modelsim|C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/simulation/modelsim/vga_TOP.vt|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/simulation/modelsim
+R7
+nvga_@t@o@p_vlg_tst
