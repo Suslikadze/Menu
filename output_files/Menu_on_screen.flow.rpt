@@ -1,6 +1,6 @@
 Flow report for Menu_on_screen
-Sat Dec 28 16:18:18 2019
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Fri Jan 17 16:23:12 2020
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Dec 28 16:18:18 2019       ;
-; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Flow Status                        ; Successful - Fri Jan 17 16:23:12 2020       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Menu_on_screen                              ;
 ; Top-level Entity Name              ; vga_TOP                                     ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE22F17C6                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 1,037 / 22,320 ( 5 % )                      ;
-;     Total combinational functions  ; 846 / 22,320 ( 4 % )                        ;
-;     Dedicated logic registers      ; 532 / 22,320 ( 2 % )                        ;
-; Total registers                    ; 532                                         ;
+; Total logic elements               ; 1,910 / 22,320 ( 9 % )                      ;
+;     Total combinational functions  ; 1,721 / 22,320 ( 8 % )                      ;
+;     Dedicated logic registers      ; 613 / 22,320 ( 3 % )                        ;
+; Total registers                    ; 613                                         ;
 ; Total pins                         ; 8 / 154 ( 5 % )                             ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 512 / 608,256 ( < 1 % )                     ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/28/2019 16:16:54 ;
+; Start date & time ; 01/17/2020 16:22:27 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Menu_on_screen      ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+---------------------------------------------------------------+----------------+-------------+------------------+
 ; Assignment Name                      ; Value                                                         ; Default Value  ; Entity Name ; Section Id       ;
 +--------------------------------------+---------------------------------------------------------------+----------------+-------------+------------------+
-; COMPILER_SIGNATURE_ID                ; 207280861605443.157753901408148                               ; --             ; --          ; --               ;
+; COMPILER_SIGNATURE_ID                ; 929347545483.157926734704924                                  ; --             ; --          ; --               ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                                            ; --             ; --          ; vga_TOP          ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; vga_TOP                                                       ; --             ; --          ; eda_simulation   ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                                   ; --             ; --          ; eda_simulation   ;
@@ -130,31 +130,31 @@ refer to the applicable agreement for further details.
 +--------------------------------------+---------------------------------------------------------------+----------------+-------------+------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:50     ; 1.0                     ; 701 MB              ; 00:01:29                           ;
-; Fitter               ; 00:00:10     ; 1.0                     ; 1051 MB             ; 00:00:11                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 549 MB              ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 625 MB              ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:07     ; 1.0                     ; 529 MB              ; 00:00:06                           ;
-; Total                ; 00:01:14     ; --                      ; --                  ; 00:01:52                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:25     ; 1.0                     ; 4860 MB             ; 00:00:41                           ;
+; Fitter                    ; 00:00:06     ; 1.1                     ; 5594 MB             ; 00:00:09                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4685 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.1                     ; 4817 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4672 MB             ; 00:00:04                           ;
+; Total                     ; 00:00:38     ; --                      ; --                  ; 00:00:58                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                     ;
-+----------------------+------------------+-------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name     ; OS Version ; Processor type ;
-+----------------------+------------------+-------------+------------+----------------+
-; Analysis & Synthesis ; Suslik           ; Windows 8.1 ; 6.3        ; x86_64         ;
-; Fitter               ; Suslik           ; Windows 8.1 ; 6.3        ; x86_64         ;
-; Assembler            ; Suslik           ; Windows 8.1 ; 6.3        ; x86_64         ;
-; Timing Analyzer      ; Suslik           ; Windows 8.1 ; 6.3        ; x86_64         ;
-; EDA Netlist Writer   ; Suslik           ; Windows 8.1 ; 6.3        ; x86_64         ;
-+----------------------+------------------+-------------+------------+----------------+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-F83ENDQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; DESKTOP-F83ENDQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; DESKTOP-F83ENDQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-F83ENDQ  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-F83ENDQ  ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
 
 
 ------------

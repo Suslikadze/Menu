@@ -10,8 +10,11 @@ module ROM(
     input [9:0] x, 
     input [9:0] x0, //начальная точка блока меню(мегафункции константы)
     input [9:0] y0,
-    input [31:0] line, // параметризируемо, по 8 бит на каждый символ
-    input [7:0] exit_value,
+    input [19:0] input_mode,
+    input [19:0] input_Type_AGC,
+    input [19:0] input_Set_LVL1,
+    input [19:0] input_Set_LVL2,
+    input [19:0] input_Time_int,
     output out_R, // Здесь сразу выводим бит для каждого цвета
     output out_G,
     output out_B
@@ -20,12 +23,13 @@ module ROM(
 wire [7:0] pixels;
 reg [5:0] char;
 reg out;
-wire window = (((x > x0) && x < (x0 + 100)) && (y > y0 && (y < (y0 + 450)))) ? 1 : 0; //Задаем рамки окна меню
+wire window = (((x > x0) && x < (x0 + 200)) && (y > y0 && (y < (y0 + 250)))) ? 1 : 0; //Задаем рамки окна меню
 reg [2:0] i, j = 0;
-reg [1:0] valid;
+reg [2:0] valid;
 reg out_bit_R;
 reg out_bit_G;
 reg out_bit_B;
+reg write_char = 0;
 //////////////////////////////////////////////////////////  
 assign out_R = out_bit_R;
 assign out_G = out_bit_G;
@@ -37,45 +41,64 @@ chars chars(
     .pixels(pixels)
 );
 //////////////////////////////////////////////////////////
+
+// always @(posedge newline) begin
+//     if (write_char) begin
+//         if (count_in_symbol < 3'd7) begin
+//             write_char <= 1;
+//             count_in_symbol <= count_in_symbol + 3'd1;
+//         end else begin
+//             count_in_symbol <= 3'd0; 
+//             write_char <= 0;
+//         end
+//     end
+// end
+//////////////////////////////////////////////////////////
 //Блок отображения общего фона и строчек меню
 //При желании можно ручным вводом корректировать, принцип хоть и громозкий, зато эффективный
 
 always @(posedge clk) begin
-    // case(y) 
-    //     y[y0 + 10:y0 + 10 + 8]: valid = 2'b01;
-    //    // ((y >= (y0 + 30)) && (y < (y0 + 30 + 8))):  valid <= 2'b10;
-    // default: valid = 2'b00;
-    // endcase
+    case(y) 
+        y0 + 10: valid = 3'b001;
+        y0 + 30: valid = 3'b010;
+        y0 + 50: valid = 3'b011;
+        y0 + 70: valid = 3'b100;
+    default: if (write_char == 0) begin
+                valid = 2'b00;
+            end
+    endcase
 
-    if ((y >= y0 + 10) && (y < y0 + 18)) begin //Строка, где будет выводится первый набор символов под value == 1
-        valid <= 2'b01;
-    end else if ((y >= (y0 + 30)) && (y < (y0 + 38))) begin //Строка, где будет выводится второй набор символов под value == 2
-        valid <= 2'b10;
-    end else begin
-        valid <= 2'b00;
-    end
+    // if ((y >= y0 + 10) && (y < y0 + 18)) begin //Строка, где будет выводится первый набор символов под value == 1
+    //     valid <= 2'b01;
+    // end else if ((y >= (y0 + 30)) && (y < (y0 + 38))) begin //Строка, где будет выводится второй набор символов под value == 2
+    //     valid <= 2'b10;
+    // end else begin
+    //     valid <= 2'b00;
+    // end
 end
 ////////////////////////////////////////////////////////// 
 //входной chars, где помещены символы, задействованные в тексте(exit_value - динамически изменяющийся выводимый параметр)
 //Здесь мы формируем необходимое нам слово, расставляя символы в нужном поряке
 always @(*) begin
     case (valid)
-    2'b01: begin
+    //mode
+    3'b001: begin
                 case (x[9:3])
-                    x0[9:3] + 7'd1: char = 17;
-                    x0[9:3] + 7'd2: char = 14;
-                    x0[9:3] + 7'd3: char = 21;
-                    x0[9:3] + 7'd4: char = 21;
-                    x0[9:3] + 7'd5: char = 24;
-                    x0[9:3] + 7'd6: char = 24;
-                    x0[9:3] + 7'd7: char = 24;
-                    x0[9:3] + 7'd8: char = 24;
-                    x0[9:3] + 7'd11: char = exit_value[7:4];
-                    x0[9:3] + 7'd12: char = exit_value[3:0];
+                    x0[9:3] + 7'd1: char = 22;
+                    x0[9:3] + 7'd2: char = 24;
+                    x0[9:3] + 7'd3: char = 13;
+                    x0[9:3] + 7'd4: char = 14;
+                    x0[9:3] + 7'd5: char = 37;
+                    x0[9:3] + 7'd6: char = 37;
+                    x0[9:3] + 7'd7: char = 37;
+                    x0[9:3] + 7'd8: char = 37;
+                    x0[9:3] + 7'd11: char = input_mode[7:4];
+                    x0[9:3] + 7'd12: char = input_mode[3:0];
                 default: char = 7'd37;
                 endcase
             end
-     2'b10: begin
+    //TypeAGC
+    3'b010: begin
                 case (x[9:3])
                     x0[9:3] + 7'd1: char = 29;
                     x0[9:3] + 7'd2: char = 34;
@@ -85,26 +108,48 @@ always @(*) begin
                     x0[9:3] + 7'd6: char = 10;
                     x0[9:3] + 7'd7: char = 16;
                     x0[9:3] + 7'd8: char = 12;
-                    x0[9:3] + 7'd11: char = exit_value[7:4];
-                    x0[9:3] + 7'd12: char = exit_value[3:0];
+                    x0[9:3] + 7'd11: char = input_Type_AGC[7:4];
+                    x0[9:3] + 7'd12: char = input_Type_AGC[3:0];
                     default: char = 7'd37;
                 endcase
             end
-
-    // //             case (x[9:3])
-    // //                 7'd1: char = line[3:0];
-    // //                 7'd3: char = line[15:12];
-    // //                 7'd5: char = line[11:8];
-    // //                 7'd7: char = line[15:12];
-    // //                 7'd14: char = line[19:16];
-    // //                 7'd18: char = line[7:4];
-    // //                 7'd22: char = line[27:24];
-    // //                 7'd26: char = line[31:28];
-    // //                 7'd29: char = exit_value[7:4];
-    // //                 7'd30: char = exit_value[3:0];
-    //              default: char = 6'd37;
-    //             endcase
-    //         end
+    //SetLVL1
+    3'b011: begin
+                case (x[9:3])
+                        x0[9:3] + 7'd1: char = 28;
+                        x0[9:3] + 7'd2: char = 14;
+                        x0[9:3] + 7'd3: char = 29;
+                        x0[9:3] + 7'd4: char = 37;
+                        x0[9:3] + 7'd5: char = 21;
+                        x0[9:3] + 7'd6: char = 31;
+                        x0[9:3] + 7'd7: char = 21;
+                        x0[9:3] + 7'd8: char = 01;
+                        x0[9:3] + 7'd10: char = input_Set_LVL1[19:16];
+                        x0[9:3] + 7'd11: char = input_Set_LVL1[15:12];
+                        x0[9:3] + 7'd12: char = input_Set_LVL1[11:8];
+                        x0[9:3] + 7'd13: char = input_Set_LVL1[7:4];
+                        x0[9:3] + 7'd14: char = input_Set_LVL1[3:0];
+                        default: char = 7'd37;
+                endcase
+            end
+    //SetLVL2
+    3'b100: begin
+                case (x[9:3])
+                        x0[9:3] + 7'd1: char = 28;
+                        x0[9:3] + 7'd2: char = 14;
+                        x0[9:3] + 7'd3: char = 29;
+                        x0[9:3] + 7'd4: char = 37;
+                        x0[9:3] + 7'd5: char = 21;
+                        x0[9:3] + 7'd6: char = 31;
+                        x0[9:3] + 7'd7: char = 21;
+                        x0[9:3] + 7'd8: char = 02;
+                        x0[9:3] + 7'd11: char = input_Set_LVL2[15:12];
+                        x0[9:3] + 7'd12: char = input_Set_LVL2[11:8];
+                        x0[9:3] + 7'd13: char = input_Set_LVL2[7:4];
+                        x0[9:3] + 7'd14: char = input_Set_LVL2[3:0];
+                        default: char = 7'd37;
+                endcase
+            end
     endcase
 end
 //////////////////////////////////////////////////////////
@@ -120,7 +165,7 @@ always @(posedge clk) begin
         //         end 
         //Символы внутри рамки 1
         case (valid)
-        2'b01: begin
+        3'b001: begin
                     if (pixels[7 - i]) begin
                         out_bit_R <= 1;
                         out_bit_G <= 1;
@@ -131,8 +176,32 @@ always @(posedge clk) begin
                         out_bit_B <= 1;
                     end
                 end
-        //Символы внутри рамки 20
-        2'b10: begin
+        //Символы внутри рамки 2
+        3'b010: begin
+                    if (pixels[7 - i]) begin
+                        out_bit_R <= 1;
+                        out_bit_G <= 1;
+                        out_bit_B <= 0;
+                    end else begin
+                        out_bit_R <= 1;
+                        out_bit_G <= 1;
+                        out_bit_B <= 1;
+                    end
+                end
+        //Символы внутри рамки 3
+        3'b011: begin
+                    if (pixels[7 - i]) begin
+                        out_bit_R <= 1;
+                        out_bit_G <= 1;
+                        out_bit_B <= 0;
+                    end else begin
+                        out_bit_R <= 1;
+                        out_bit_G <= 1;
+                        out_bit_B <= 1;
+                    end
+                end
+        //Символы внутри рамки 4
+        3'b100: begin
                     if (pixels[7 - i]) begin
                         out_bit_R <= 1;
                         out_bit_G <= 1;
@@ -182,10 +251,14 @@ end
 //Этот счетчик нужен для chars.v, так как "y" может привязаться не к началу отрисовки символа
 always @(posedge newline) begin
     if (valid) begin
-        j <= j + 1;
-    end
-    if (j == 7) begin
-        j <= 0;
+        write_char <= 1;
+        if (j < 7) begin
+            j <= j + 1;
+        end else begin
+    //if (j == 7) begin
+            j <= 0;
+            write_char <= 0;
+        end
     end
 end
 //////////////////////////////////////////////////////////

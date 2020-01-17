@@ -12,69 +12,69 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master {C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:51:07 on Dec 28,2019
+# Start time: 17:40:21 on Jan 09,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v 
 # -- Compiling module vga_TOP
 # 
 # Top level modules:
 # 	vga_TOP
-# End time: 14:51:08 on Dec 28,2019, Elapsed time: 0:00:01
+# End time: 17:40:23 on Jan 09,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master {C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:51:08 on Dec 28,2019
+# Start time: 17:40:23 on Jan 09,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA.v 
 # -- Compiling module vga
 # 
 # Top level modules:
 # 	vga
-# End time: 14:51:08 on Dec 28,2019, Elapsed time: 0:00:00
+# End time: 17:40:23 on Jan 09,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master {C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:51:08 on Dec 28,2019
+# Start time: 17:40:23 on Jan 09,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v 
 # -- Compiling module ROM
 # 
 # Top level modules:
 # 	ROM
-# End time: 14:51:08 on Dec 28,2019, Elapsed time: 0:00:00
+# End time: 17:40:23 on Jan 09,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master {C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:51:08 on Dec 28,2019
+# Start time: 17:40:23 on Jan 09,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v 
 # -- Compiling module value_ROM
 # 
 # Top level modules:
 # 	value_ROM
-# End time: 14:51:08 on Dec 28,2019, Elapsed time: 0:00:00
+# End time: 17:40:23 on Jan 09,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master {C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Chars V2.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:51:08 on Dec 28,2019
+# Start time: 17:40:23 on Jan 09,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Chars V2.v 
 # -- Compiling module chars
 # 
 # Top level modules:
 # 	chars
-# End time: 14:51:08 on Dec 28,2019, Elapsed time: 0:00:00
+# End time: 17:40:23 on Jan 09,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/simulation/modelsim {C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/simulation/modelsim/vga_TOP.vt}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 14:51:09 on Dec 28,2019
+# Start time: 17:40:23 on Jan 09,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/simulation/modelsim" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/simulation/modelsim/vga_TOP.vt 
 # -- Compiling module vga_TOP_vlg_tst
 # 
 # Top level modules:
 # 	vga_TOP_vlg_tst
-# End time: 14:51:09 on Dec 28,2019, Elapsed time: 0:00:00
+# End time: 17:40:23 on Jan 09,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  vga_TOP_vlg_tst
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" vga_TOP_vlg_tst 
-# Start time: 14:51:11 on Dec 28,2019
+# Start time: 17:40:25 on Jan 09,2020
 # Loading work.vga_TOP_vlg_tst
 # Loading work.vga_TOP
 # Loading work.vga
@@ -83,106 +83,190 @@
 # Loading work.value_ROM
 # ** Warning: (vsim-3015) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v(57): [PCDPC] - Port size (10) does not match connection size (6) for port 'some_value'. The port definition is at: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/value_ROM File: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
+# Trace back: Error QStructure::sort: invalid command name ""
+#   <6:proc:11: ::QStructure::sort .main_pane.structure 0 ascending
+#   <5:eval:1: ::QStructure::structsort .main_pane.structure 0 ascending
+#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 0 ascending
+#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 0 ascending
+#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
+#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
 # 
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: Siriy  Hostname: DESKTOP-F83ENDQ  ProcessID: 14768
-#           Attempting to use alternate WLF file "./wlftsski25".
+#           Attempting to use alternate WLF file "./wlftr9nx7r".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftsski25
+#           Using alternate file: ./wlftr9nx7r
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-add wave -position end  sim:/vga_TOP_vlg_tst/i1/ROM/valid
-add wave -position end  sim:/vga_TOP_vlg_tst/i1/ROM/y
-add wave -position end  sim:/vga_TOP_vlg_tst/i1/ROM/y0
+add wave -position end  sim:/vga_TOP_vlg_tst/i1/newline
+add wave -position end  sim:/vga_TOP_vlg_tst/i1/ROM/count_in_symbol
+restart
+# ** Warning: (vsim-3015) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v(57): [PCDPC] - Port size (10) does not match connection size (6) for port 'some_value'. The port definition is at: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/value_ROM File: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
+run -all
+add wave -position end  sim:/vga_TOP_vlg_tst/i1/y
+restart
+# ** Warning: (vsim-3015) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v(57): [PCDPC] - Port size (10) does not match connection size (6) for port 'some_value'. The port definition is at: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/value_ROM File: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
+run -all
 restart
 # ** Warning: (vsim-3015) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v(57): [PCDPC] - Port size (10) does not match connection size (6) for port 'some_value'. The port definition is at: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/value_ROM File: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
 run -all
 vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:06:44 on Dec 28,2019
+# Start time: 17:47:33 on Jan 09,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v 
 # -- Compiling module ROM
 # 
 # Top level modules:
 # 	ROM
-# End time: 15:06:44 on Dec 28,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:06:48 on Dec 28,2019
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v 
-# -- Compiling module vga_TOP
-# 
-# Top level modules:
-# 	vga_TOP
-# End time: 15:06:48 on Dec 28,2019, Elapsed time: 0:00:00
+# End time: 17:47:33 on Jan 09,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
-# Loading work.vga_TOP
 # Loading work.ROM
 # ** Warning: (vsim-3015) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v(57): [PCDPC] - Port size (10) does not match connection size (6) for port 'some_value'. The port definition is at: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v(3).
 #    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/value_ROM File: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
 run -all
 vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:13:52 on Dec 28,2019
+# Start time: 17:48:47 on Jan 09,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v 
 # -- Compiling module ROM
-# ** Error: (vlog-13069) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v(45): near "[": syntax error, unexpected '['.
-# End time: 15:13:52 on Dec 28,2019, Elapsed time: 0:00:00
+# 
+# Top level modules:
+# 	ROM
+# End time: 17:48:47 on Jan 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ROM
+# ** Warning: (vsim-3015) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v(57): [PCDPC] - Port size (10) does not match connection size (6) for port 'some_value'. The port definition is at: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/value_ROM File: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:49:05 on Jan 09,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v 
+# -- Compiling module ROM
+# 
+# Top level modules:
+# 	ROM
+# End time: 17:49:06 on Jan 09,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ROM
+# ** Warning: (vsim-3015) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v(57): [PCDPC] - Port size (10) does not match connection size (6) for port 'some_value'. The port definition is at: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/value_ROM File: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
+run -all
+vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:55:57 on Jan 09,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v 
+# -- Compiling module ROM
+# ** Error: (vlog-13069) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v(55): near "always": syntax error, unexpected always.
+# ** Error: (vlog-13069) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v(61): near "+": syntax error, unexpected '+'.
+# ** Error: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v(61): (vlog-13205) Syntax error found in the scope following 'y0'. Is there a missing '::'?
+# End time: 17:55:57 on Jan 09,2020, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:56:15 on Jan 09,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v 
+# -- Compiling module ROM
+# ** Error: (vlog-13069) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v(66): near "not": syntax error, unexpected not.
+# End time: 17:56:16 on Jan 09,2020, Elapsed time: 0:00:01
 # Errors: 1, Warnings: 0
 # C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
 vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:14:06 on Dec 28,2019
+# Start time: 17:56:41 on Jan 09,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v 
 # -- Compiling module ROM
-# ** Error: (vlog-13069) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v(45): near "[": syntax error, unexpected '['.
-# End time: 15:14:06 on Dec 28,2019, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+# 
+# Top level modules:
+# 	ROM
+# End time: 17:56:41 on Jan 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ROM
+# ** Warning: (vsim-3015) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v(57): [PCDPC] - Port size (10) does not match connection size (6) for port 'some_value'. The port definition is at: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/value_ROM File: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
+run -all
+add wave -position end  sim:/vga_TOP_vlg_tst/i1/ROM/valid
+restart
+# ** Warning: (vsim-3015) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v(57): [PCDPC] - Port size (10) does not match connection size (6) for port 'some_value'. The port definition is at: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/value_ROM File: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
+run -all
+add wave -position end  sim:/vga_TOP_vlg_tst/i1/ROM/write_char
+restart
+# ** Warning: (vsim-3015) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v(57): [PCDPC] - Port size (10) does not match connection size (6) for port 'some_value'. The port definition is at: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/value_ROM File: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
+run -all
 vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:14:53 on Dec 28,2019
+# Start time: 17:59:47 on Jan 09,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v 
 # -- Compiling module ROM
-# ** Error: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v(44): (vlog-2730) Undefined variable: 'inside'.
-# End time: 15:14:53 on Dec 28,2019, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+# 
+# Top level modules:
+# 	ROM
+# End time: 17:59:47 on Jan 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ROM
+# ** Warning: (vsim-3015) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v(57): [PCDPC] - Port size (10) does not match connection size (6) for port 'some_value'. The port definition is at: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/value_ROM File: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
+run -all
 vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:15:22 on Dec 28,2019
+# Start time: 18:00:40 on Jan 09,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v 
 # -- Compiling module ROM
-# ** Error: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v(44): (vlog-2730) Undefined variable: 'unique'.
-# ** Error: (vlog-13069) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v(44): near "case": syntax error, unexpected case.
-# End time: 15:15:22 on Dec 28,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+# 
+# Top level modules:
+# 	ROM
+# End time: 18:00:41 on Jan 09,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ROM
+# ** Warning: (vsim-3015) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v(57): [PCDPC] - Port size (10) does not match connection size (6) for port 'some_value'. The port definition is at: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/value_ROM File: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
+run -all
+add wave -position end  sim:/vga_TOP_vlg_tst/i1/ROM/j
 vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:15:36 on Dec 28,2019
+# Start time: 18:26:30 on Jan 09,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v 
 # -- Compiling module ROM
-# ** Error: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v(44): (vlog-2730) Undefined variable: 'unique'.
-# ** Error: (vlog-13069) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v(44): near "case": syntax error, unexpected case.
-# End time: 15:15:36 on Dec 28,2019, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
+# 
+# Top level modules:
+# 	ROM
+# End time: 18:26:31 on Jan 09,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ROM
+# ** Warning: (vsim-3015) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v(57): [PCDPC] - Port size (10) does not match connection size (6) for port 'some_value'. The port definition is at: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/value_ROM File: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
+run -all
 vlog -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:16:01 on Dec 28,2019
+# Start time: 18:34:09 on Jan 09,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master" C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v 
 # -- Compiling module ROM
-# ** Error: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v(45): Range must be bounded by constant expressions.
-# End time: 15:16:01 on Dec 28,2019, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/vlog failed.
-# End time: 16:00:56 on Dec 28,2019, Elapsed time: 1:09:45
-# Errors: 14, Warnings: 5
+# 
+# Top level modules:
+# 	ROM
+# End time: 18:34:09 on Jan 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.ROM
+# ** Warning: (vsim-3015) C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v(57): [PCDPC] - Port size (10) does not match connection size (6) for port 'some_value'. The port definition is at: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /vga_TOP_vlg_tst/i1/value_ROM File: C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/In_dec.v
+run -all
+# End time: 19:01:40 on Jan 09,2020, Elapsed time: 1:21:15
+# Errors: 20, Warnings: 16

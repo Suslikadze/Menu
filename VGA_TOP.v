@@ -15,15 +15,13 @@ wire [9:0] y;
 wire newframe;
 wire newline;
 wire VGA_clk;
-reg [31:0] line;
-wire [7:0] exit_value;
-reg [5:0] counter_value;
-reg [19:0] counter_clk;
+wire [19:0] exit_value;
+wire [19:0] exit_value1;
+reg [15:0] counter_value;
+reg [15:0] counter_value1;
+reg [19:0] counter_clk, counter_clk1;
 //////////////////////////////////////////////////////////  
 
-////////////////////////////////////////////////////////// 
-localparam CHAR_B = 4'd10, CHAR_F = 4'd11, CHAR_I = 4'd12, CHAR_U = 4'd13,
-  CHAR_Z = 4'd14;
 //////////////////////////////////////////////////////////
 vga vga(
     .clk(clk),
@@ -47,40 +45,53 @@ ROM ROM(
     .y(y[9:0]),
     .x0(10'd400),
     .y0(10'd50),
-    .line(line[31:0]),
-    .exit_value(exit_value[7:0]),
+    .input_mode(exit_value[19:0]),
+    .input_Type_AGC(exit_value1[19:0]),
+    .input_Set_LVL1(exit_value1[19:0]),
+    .input_Set_LVL2(exit_value1[19:0]),
+    .input_Time_int(exit_value[19:0]),
     .out_R(R),
     .out_G(G),
     .out_B(B)
 );
 
-value_ROM value_ROM(
-    .some_value(counter_value[5:0]),
+until_99999_conventer other(
+    .some_value(counter_value[11:0]),
     .en(valid),
-    .newframe(newframe),
-    .exit_value(exit_value[7:0])
+    .trigger(newframe),
+    .exit_value(exit_value[19:0])
 );
-//////////////////////////////////////////////////////////
-always @(*) begin
-    line[3:0] <= CHAR_F;
-    line[7:4] <= CHAR_I;
-    line[11:8] <= CHAR_Z;
-    line[15:12] <= CHAR_Z;
-    line[19:16] <= CHAR_B;
-    line[23:20] <= CHAR_U;
-    line[27:24] <= CHAR_Z;
-    line[31:28] <= CHAR_Z;
-end
+
+until_99999_conventer SetLVL1_conventer(
+    .some_value(counter_value1[11:0]),
+    .en(valid),
+    .trigger(newframe), 
+    .exit_value(exit_value1[19:0])
+);
+
+
 //////////////////////////////////////////////////////////
 always @(posedge newframe) begin
-    if (counter_clk != 250) begin
+    if (counter_clk != 50) begin
         counter_clk <= counter_clk + 1;
-    end else if (counter_value != 6'd77) begin
+    end else if (counter_value != 7'd77) begin
         counter_clk <= 0;
         counter_value <= counter_value + 1;
     end else begin
         counter_value <= 0;
         counter_clk <= 0;
+    end
+end
+//////////////////////////////////////////////////////////
+always @(posedge newframe) begin
+    if (counter_clk1 != 1) begin
+        counter_clk1 <= counter_clk1 + 1;
+    end else if (counter_value1 != 12'd200) begin
+        counter_clk1 <= 0;
+        counter_value1 <= counter_value1 + 1'd1;
+    end else begin
+        counter_value1 <= 1524;
+        counter_clk1 <= 0;
     end
 end
 endmodule

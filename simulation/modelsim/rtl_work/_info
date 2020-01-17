@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/simulation/modelsim
 vchars
-Z1 !s110 1577533868
+Z1 !s110 1578580823
 !i10b 1
 !s100 ;]1Y9SWL<A^Fd6Zd@Y^2k2
 I@X5JOa7mWmGbIYS744@Lh2
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1577533868.000000
+Z4 !s108 1578580823.000000
 !s107 C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Chars V2.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master|C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Chars V2.v|
 !i113 1
@@ -31,13 +31,13 @@ Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master
 Z7 tCvgOpt 0
 vROM
-!s110 1577534804
+!s110 1578584049
 !i10b 1
-!s100 =h1@QB7RHmE_7NP7@LGWI3
-IA1PQL9K[@K0>ZKKcZTPOh3
+!s100 zF:hZ6S2IJBn=aP_]9JfJ1
+IEWbKAHkF4FzK^SmNbEJ7Y1
 R2
 R0
-w1577534728
+w1578584046
 8C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v
 FC:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v
 L0 2
@@ -45,7 +45,7 @@ R3
 r1
 !s85 0
 31
-!s108 1577534804.000000
+!s108 1578584049.000000
 !s107 C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master|C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/Text_on_screen.v|
 !i113 1
@@ -99,7 +99,7 @@ R5
 R6
 R7
 vvga_TOP
-!s110 1577534808
+R1
 !i10b 1
 !s100 W_5BO1YVVVibjhE5no1Zf3
 I7gM6eD9O:5ZFCM]XKHO[:1
@@ -113,7 +113,7 @@ R3
 r1
 !s85 0
 31
-!s108 1577534808.000000
+!s108 1578580821.000000
 !s107 C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master|C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/VGA_TOP.v|
 !i113 1
@@ -122,7 +122,7 @@ R6
 R7
 nvga_@t@o@p
 vvga_TOP_vlg_tst
-!s110 1577533869
+R1
 !i10b 1
 !s100 V:D7Ve^=KS?YJ@2W[l[H<3
 I]XGmGlg@HZ>[5Ml__n>L[0
@@ -136,7 +136,7 @@ R3
 r1
 !s85 0
 31
-!s108 1577533869.000000
+R4
 !s107 C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/simulation/modelsim/vga_TOP.vt|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/simulation/modelsim|C:/Users/Ruslan/Desktop/Projects/Menu_on_screen-master/simulation/modelsim/vga_TOP.vt|
 !i113 1
